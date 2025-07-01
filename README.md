@@ -2,9 +2,7 @@
 
 <h1 align="center">Simple Homepage - Alarado | devChallenges</h1>
 
-<div align="center">
-   Solution for <a href="https://devchallenges.io/challenge/simple-hompage-alarado" target="_blank">Simple Homepage - Alarado</a> from <a href="https://devchallenges.io" target="_blank">devChallenges.io</a>.
-</div>
+
 
 
 ---
@@ -21,6 +19,8 @@ Simple Homepage - Alarado is a pixel-perfect, fully responsive landing page buil
 | Desktop | Tablet | Mobile |
 | ------- | ------ | ------ |
 | ![Desktop](./design/Desktop_1350px.jpg) | ![Tablet](./design/Tablet_1024px.jpg) | ![Mobile](./design/Mobile_412px.jpg) |
+
+
 
 ## Getting Started
 
