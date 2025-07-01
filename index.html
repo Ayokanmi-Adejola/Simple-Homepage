@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Homepage - Alarado | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        background: #f7fafd;
+        font-family: 'Inter', Arial, sans-serif;
+        color: #232946;
+      }
+      header {
+        width: 100%;
+        padding: 32px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+      }
+      nav {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav-left {
+        display: flex;
+        align-items: center;
+      }
+      .nav-left img {
+        height: 32px;
+        margin-right: 32px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+      }
+      .nav-links li a {
+        color: #232946;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        padding-bottom: 2px;
+        transition: color 0.2s;
+      }
+      .nav-links li a.active, .nav-links li a:hover {
+        color: #3730a3;
+        border-bottom: 2px solid #3730a3;
+      }
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .nav-right img {
+        height: 24px;
+        cursor: pointer;
+        transition: filter 0.2s;
+      }
+      main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+      }
+      .hero-section {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 48px;
+        background: #fff;
+        border-radius: 32px;
+        box-shadow: 0 8px 32px rgba(55,48,163,0.08);
+        padding: 64px 48px;
+      }
+      .hero-content {
+        flex: 1 1 350px;
+        min-width: 320px;
+      }
+      .hero-badge {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 999px;
+        padding: 4px 16px;
+        margin-bottom: 24px;
+      }
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #232946;
+        margin-bottom: 24px;
+        line-height: 1.1;
+        letter-spacing: -2px;
+      }
+      .hero-desc {
+        font-size: 1.25rem;
+        color: #6b7280;
+        margin-bottom: 32px;
+        max-width: 90%;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .hero-actions .primary {
+        background: #3730a3;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 40px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(55,48,163,0.08);
+        transition: background 0.2s;
+      }
+      .hero-actions .primary:hover {
+        background: #232946;
+      }
+      .hero-actions .secondary {
+        background: transparent;
+        color: #3730a3;
+        font-weight: 700;
+        border: 2px solid #3730a3;
+        border-radius: 8px;
+        padding: 14px 40px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+      }
+      .hero-actions .secondary:hover {
+        background: #e0e7ff;
+        color: #232946;
+      }
+      .hero-features {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-top: 16px;
+      }
+      .hero-feature {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .hero-feature img {
+        height: 20px;
+      }
+      .hero-feature span {
+        color: #16a34a;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .hero-image {
+        flex: 1 1 350px;
+        min-width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .hero-image img {
+        width: 100%;
+        max-width: 480px;
+        border-radius: 24px;
+        box-shadow: 0 8px 32px rgba(55,48,163,0.08);
+      }
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 32px;
+        color: rgb(55, 65, 81);
+      }
+      .author-info a {
+        text-decoration: none;
+      }
+      @media (max-width: 900px) {
+        .hero-section {
+          flex-direction: column;
+          padding: 32px 12px;
+        }
+        .hero-title {
+          font-size: 2.2rem;
+        }
+      }
+      @media (max-width: 600px) {
+        .hero-section {
+          padding: 16px 2px;
+        }
+        .hero-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="nav-left">
+          <img src="resources/logo-light.svg" alt="Alarado Logo" />
+          <ul class="nav-links">
+            <li><a href="#" class="active">About us</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <img src="resources/Sun_fill.svg" alt="Light mode" />
+          <img src="resources/Moon_fill.svg" alt="Dark mode" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <span class="hero-badge">😎 SIMPLE WAY TO COMMUNICATE</span>
+          <h1 class="hero-title">Actions for<br>Accessibility<br>in Design</h1>
+          <p class="hero-desc">The fastest way to build and deploy websites with reusable components.</p>
+          <div class="hero-actions">
+            <button class="primary">GET STARTED</button>
+            <button class="secondary">Get live demo</button>
+          </div>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <img src="resources/Done_ring_round_fill.svg" alt="Done" />
+              <span>No credit card required</span>
+            </div>
+            <div class="hero-feature">
+              <img src="resources/Done_ring_round_fill-1.svg" alt="Done" />
+              <span>No software to install</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="resources/hero-image-simple-homepage.png" alt="Hero" />
+        </div>
+      </section>
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Ayokanmi Adejola</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
