@@ -1,26 +1,17 @@
 
 
-<h1 align="center">Simple Homepage - Alarado | devChallenges</h1>
+<h1 align="center">Simple Homepage - Alarado | devChallenges.io</h1>
 
-
-
-
----
-
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/9efcf453-51dd-4dc9-adc8-85532d9b5eb7" />
 
 
 ## Overview
 
 Simple Homepage - Alarado is a pixel-perfect, fully responsive landing page built as a solution to the devChallenges.io challenge. The project focuses on clean, accessible HTML and modern CSS, closely following the provided design for desktop, tablet, and mobile breakpoints. No frameworks or build tools were used—just semantic HTML and custom CSS.
 
-
-## Screenshots
-
 | Desktop | Tablet | Mobile |
 | ------- | ------ | ------ |
 | ![Desktop](./design/Desktop_1350px.jpg) | ![Tablet](./design/Tablet_1024px.jpg) | ![Mobile](./design/Mobile_412px.jpg) |
-
-
 
 ## Getting Started
 
@@ -28,7 +19,8 @@ To view or use this project locally:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Ayokanmi-Adejola/simple-homepage-alarado.git
+   git clone https://github.com/Ayokanmi-Adejola/Simple-Homepage
+   cd simple-homepage
    ```
 2. Open `index.html` in your browser. No build step required.
 
@@ -66,10 +58,3 @@ To view or use this project locally:
 - [MDN Web Docs](https://developer.mozilla.org/) — HTML and CSS reference
 - [CSS Tricks Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) — Layout help
 - [devChallenges.io Community](https://devchallenges.io/) — Challenge details and support
-
-
----
-
-## 👤 Author
-Coded by **Ayokanmi Adejola**  
-Challenge by [devChallenges.io](https://devchallenges.io/)
